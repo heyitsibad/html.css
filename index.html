@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibad Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.kpg.jpg')
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid red; */
+        margin: 0px 7px;
+        padding: 3px 4px;
+        top: 23px;
+        left: 22px;
+    }
+
+    .mid {
+        display: block;
+        margin: 5px auto;
+        padding: 11px 14px;
+        width: 40%;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid yellow; */
+        top: 24px;
+        right: 26px;
+
+    }
+
+    .right div {
+        border: 2px solid white;
+    }
+
+    .navbar li {
+        display: inline-block;
+        display: inline;
+        padding: 32px 24px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .left img {
+        width: 93px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .btn {
+        color: white;
+        width: 90px;
+        margin: 5px 5px;
+        padding: 7px 4px;
+        border-radius: 20px;
+        background-color: black;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        color: rgb(195, 193, 193);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 125px 50px;
+        padding: 5px 45px;
+        width: 32%;
+        border-radius: 35px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        width: 325px;
+        padding: 0px 70px;
+        margin: 4px 50px;
+        font-size: 23px;
+        border-radius: 10px
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input,
+    text {
+        text-align: center;
+    }
+
+    .container button {
+        color: white;
+        background-color: black;
+        font-family: 'Baloo Bhai', cursive;
+        font-size: 20px;
+        width: 465px;
+        padding: 5px 5px;
+        margin: 1px 53px;
+    }
+
+    .container button:hover {
+        color: rgb(195, 195, 195);
+    }
+
+    .container label {
+        padding: 2px 55px;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/gym.png.jpg" alt="">
+            <div>Ibad Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Fitness Calculator</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Karachi now</h1>
+        <form action="noaction.php" class="action">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+        </form>
+        <div>
+            <label for="Excercise for">Exercise for:</label>
+            <select name="Excercise for" id="Excercise for">
+                <option value="Leg">Leg</option>
+                <option value="Shoulders">Shoulders</option>
+                <option value="Biceps" selected>Biceps</option>
+            </select>
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+
+</body>
+
+</html>
